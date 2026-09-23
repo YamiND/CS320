@@ -89,12 +89,3 @@
     state: enabled
     immediate: true
   become: true
-
-
-- name: Open Port 8080
-  ansible.posix.firewalld:
-    port: 8080/tcp
-    permanent: true
-    state: enabled
-    immediate: true
-  become: true
