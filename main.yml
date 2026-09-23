@@ -1,0 +1,10 @@
+---
+
+- name: Gather Ansible Facts
+  hosts: cs320
+  remote_user: tpostma
+
+  tasks:
+    - name: Execute the LAMP Role
+      ansible.builtin.include_role:
+        name: lamp
